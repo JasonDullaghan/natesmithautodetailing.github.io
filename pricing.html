@@ -1,340 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing</title>
-    <link rel="stylesheet" href="styleReset.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="pricingStyle.css">
-</head>
-<header>
-     
-    <div class="toggle"></div>
-    <div class="navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="aboutUs.html">About Us</a></li>
-        <li><a href="reviews.html">Reviews</a></li>
-        <li><a href="contactUs.html">Contact Us</a></li>
-          <li> <a href="https://nate-smith-auto-detailing.square.site/">Store Page</a></li>
-      </ul>
-  
-    </div>
-    <script src="script.js"></script>
-  </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pricing</title>
+        <link rel="stylesheet" href="styleReset.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/templates/header.css">
+        <link rel="stylesheet" href="css/templates/footer.css">
+        <link rel="stylesheet" href="css/templates/reusableSplitView.css">
+        <link rel="stylesheet" href="css/pricingStyle.css">
 
-<div class="topper">
-    <img src="image/carcapture.PNG" alt="">
- </div>
-
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="pricing.html">Pricing</a>
-    <a href="aboutUs.html">About us</a>
-    <a href="contactUs.html">Contact Us</a>
-</nav>
-
-<main>
-    <div class="pc">
-    <section id="section-right">
-        <div class="moving">
-            <div class="intPic">
-    <img src="image/cropedaudi.jpg" alt="">
-</div>
-<div class="container reveal">
-<div class="intPic2">
-
-    <img src="image/eee.jpg" alt="">
-</div>
-</div>
-
-</div>
-    </section>
-
-<section id="section-left"> 
+    </head>
     
-        <div class="PlatI">
-        <div class="bodyText"> 
-         <h3>Platinum Exterior</h3>  
-         <h4> Starting Prices: Large Trucks/Large SUV-$150 Trucks/Mid Size SUV-$125 Sedans/Small Cars-$115</h4>
-            <h2>What's Included: Wheel and tire cleaning, wheel well cleaning, foam wash, hand wash, iron decon (if needed), clay bar (if needed),3-6 month Ceramic Sealant for paint and wheels, trim restoration, tire shine, and exterior window cleaning.
-            </h2>
-        </div>
-    </div>
-    <div class="container reveal">
-    <div class="PlatE">
-        <div class="bodyText"> 
-       <h3>Signature Interior</h3>  
-            <h4> Starting Prices: Large Trucks/ Large SUV-$150 Trucks/Mid Size SUV-$125 Sedans/Small Cars-$115</h4>
-               <h2>What’s Included: Floor matt cleaning and protectant, dry vacuum carpets and seats, leather seat cleaning, plastic, rubber, and leather panels, leather conditioner, UV plastic protectant, window cleaning, and air freshener <br> <br> Add on Shampoo Carpets/Seats:
-                   <br>
-                   Small:$80
-                   <br>
-                   Medium:$100
-                   <br>
-                   Large:$120
-               </h2>
-        </div>
-    </div>
-</div>
-</section>
-
-<div class="nonpic">
-    <div class="enhance">
-        <div class="bodyText"> 
-         <h3>Exterior Enhancement</h3>  
-         <h4>  Trucks/Large SUV:$600-$500 Mid Size SUV-$500-$400 Sedans/Small Cars-$300-$200 </h4>
-            <h2>What's Included: Wheel and tire cleaning, wheel well cleaning, foam wash, hand wash, iron decon, clay bar, trim restoration, window cleaning, tire shine, One step paint correction to remove small scratches and swirls and enhance the paints depth. SiO2 sealant to add high gloss, hydrophobic properties, and paint protection for 6-8 months. 
-            </h2>
-        </div>
-    </div>
+    <body>
+        <div id="plaitnumExterior"></div>
+        <div id="signatureInterior"></div>
+        <div id="exteriorEnhancement"></div>
+        <div id="paintCorrection"></div>
+        <div id="ceramicCoating"></div>
+        <div id="vipPackage"></div>
+        <div id="maintenanceCleaning"></div>
+        <div id="twoYearCeramicCoating"></div>
+        <div id="deepCleanInterior"></div>
+        <div id="windowTint"></div>
+        <div id="Boats"></div>
 
 
-    <div class="paint">
-        <div class="bodyText"> 
-         <h3>Paint Correction</h3>  
-         <h4> Trucks/Large SUV-$1000-$800 Mid Size SUV-$800-$600 Sedans/Small Cars-$400      </h4>
-            <h2>What's Included: Wheel and tire cleaning, wheel well cleaning, foam wash, iron decon, clay bar,  trim restoration, tire shine, window cleaning, paint gets buffed to remove swirls and medium/light scratches, paint is polished to add shine and gloss, SiO2 spray sealant is added to protect the paint
-            </h2>
-        </div>
-    </div>
-</div>
+        <script src="js/reusable.js"></script>
+        <script>
+            // Platinum Exterior
+            initializeSection("plaitnumExterior", "Platinum Exterior", [
+                "Large Trucks/Large SUV: $200-$150",
+                "Trucks/Mid Size SUV: $150-$125",
+                "Sedans/Small Cars: $125-$115"
+            ], [
+                "Wheel and tire cleaning",
+                "wheel well cleaning",
+                "foam wash",
+                "hand wash",
+                "iron decon (if needed)",
+                "clay bar (if needed)",
+                "3-6 month Ceramic Sealant for paint and wheels",
+                "trim restoration",
+                "tire shine",
+                "exterior window cleaning"
+            ], "", [
+                "images/pricing/platinumExteriorAudi.jpg",
+                "images/pricing/platinumExteriorCorvette.PNG",
+                "images/pricing/platinumExteriorSubaru.jpg"
+            ]);
 
-<section id="section-right2">
-    <div class="moving2">
-    <img src="image/IMG_41091 (2).jpg" alt="">
-</div>
-</section>
+            // Signature Interior
+            initializeSection("signatureInterior", "Signature Interior", [
+                "Large Trucks/Large SUV: $200-$150",
+                "Trucks/Mid Size SUV: $150-$125",
+                "Sedans/Small Cars: $125-$115"
+            ], [
+                "Floor matt cleaning and protectant",
+                "dry vacuum carpets and seats",
+                "leather seat cleaning",
+                "plastic, vinyl, and leather panels",
+                "leather conditioner",
+                "uv plastic protectant",
+                "interior window cleaning",
+                "air freshener"
+            ], "Neglected cars and excessive dog hair will result in price increase. Headliner not included.", [
+                "images/pricing/signatureInteriorPorsche.jpg",
+                "images/pricing/signatureInteriorVW.jpg",
+                "images/pricing/signatureInteriorVW2.jpg",
+                "images/pricing/signatureInteriorVW3.jpg",
+                "images/pricing/signatureInteriorVW4.jpg",
+                "images/pricing/signatureInteriorRed.jpg",
+                "images/pricing/signatureInteriorWhite.jpg"
+            ]);
 
-<section id="section-left2"> 
-    <div class="coating">
-        <div class="bodyText"> 
-         <h3>Ceramic Coating</h3>  
-         <h4> Trucks/Large SUV-$1700-$1200 Mid Size SUV-$1200-$1000 Sedans/Small Cars-$1000-$800    </h4>
-            <h2>What's Included: Full paint and wheel decontamination, 2 stage paint enhancement to remove scrathes, swirls, and oxidation in the paint. System X Max is applied to paint for 10 years of protection, 2 year coating for glass, wheels, and plastic trim
-            </h2>
-        </div>
-        <div class="buy-button">
-            <form action="ceramic.html" method="get">
-            <button type = "submit">Learn More</button>
-        </form>
-        </div>
-    </div>
-</section>
+            // Exterior Enhancement
+            initializeSection("exteriorEnhancement", "Exterior Enhancement", [
+                "Large Trucks/Large SUV: $600-$500",
+                "Mid Size SUV: $500-$400",
+                "Sedans/Small Cars: $300-$200"
+            ], [
+                "Wheel and tire cleaning",
+                "wheel well cleaning",
+                "foam wash",
+                "hand wash",
+                "iron decon",
+                "clay bar",
+                "trim restoration",
+                "window cleaning",
+                "tire shine",
+                "one step paint correction to remove small scratches and swirls",
+                "SiO2 sealant to add high gloss, hydrophobic properties, and paint protection for 6-8 months"
+            ], "", [
+                "images/pricing/exteriorEnhancementBMW.PNG",
+                "images/pricing/exteriorEnhancementMercedes.jpg",
+                "images/pricing/exteriorEnhancementBlue.jpg"
+            ]);
 
-<div class="nonpic">
-    <div class="vip">
-        <div class="bodyText"> 
-         <h3>VIP Package</h3>  
-         <h4> Trucks/Large SUV-$2000-$1500 Mid Size SUV-$1500-$1200 Sedans/Small Cars-$1200-$1000       </h4>
-            <h2> Whats Included:Full paint and wheel decontamination, 2 stage paint enhancement to remove scrathes, swirls, and oxidation in the paint. System X Max is applied to paint for 10 years of protection, 2 year coating for glass, wheels, and plastic trim and a complete Signature Interior Detail is included!
-            </h2>
-        </div>
-    </div>
-    <div class="maintC">
-        <div class="bodyText"> 
-         <h3>Maintenance Cleaning</h3>  
-         <h4> Monthly-Trucks/Large SUV-$180 Mid Size SUV-$150  Sedans/Small Cars-$140  Biweekly- Trucks/Large SUV-$100 Midsize SUV and Small Cars-$75             </h4>
-            <h2>After getting a full detail from one of the packages ask about getting on the schedule for biweekly or monthly maintenance cleaning to keep your car always looking showroom ready! This includes wheel and tire cleaning, hand wash, tire dressing, and a layer of Si02 sealant if needed. Interior gets a basic vacuum, panel wipe down, floor matt cleaning, inside and out glass cleaning
-            </h2>
-        </div>
-    </div>
-</div> 
+            // Paint Correction
+            initializeSection("paintCorrection", "Paint Correction", [
+                "Large Trucks/Large SUV: $1000+",
+                "Mid Size SUV: $800+",
+                "Sedans/Small Cars: $500+"
+            ], [
+                "Wheel and tire cleaning",
+                "wheel well cleaning",
+                "foam wash",
+                "iron decon",
+                "clay bar",
+                "trim restoration",
+                "tire shine",
+                "window cleaning",
+                "paint gets buffed to remove swirls and medium/light scratches",
+                "paint is polished to add shine and gloss",
+                "SiO2 spray sealant is added to protect the paint"
+            ], "", [
+                "images/pricing/paintCorrectionBlack.png",
+                "images/pricing/paintCorrectionBlack.png"
+            ]);
 
-<div class="nonpic">
-    <div class="vip">
-        <div class="bodyText"> 
-         <h3>Two Year Ceramic Coating</h3>  
-         <h4> Trucks/Large SUV:$1000 Mid Size SUV-$750 Sedans/Small Cars:$650       </h4>
-            <h2>What’s Included: Wheels and Tires cleaning, exterior decontamination wash, one step paint correction, One year coating, applied to paint, wheels, glass, and trim.
-            </h2>
-        </div>
-    </div>
-    <div class="maintC">
-        <div class="bodyText"> 
-         <h3>Deep Clean Interior</h3>  
-         <h4> Trucks/Large SUV- $270 Mid Size SUV-$250 Sedans/Small cars:$200        </h4>
-            <h2>What’s Included:Dry vacuum, carpet and upholstery shampoo and steamed, wet vacuum extraction, floor matt cleaning, plastic, rubber,and vinyl panels steamed cleaned and disinfected, topped with UV protectant, leather conditioner (if needed), and air freshener. 
+            // Ceramic Coating
+            initializeSection("ceramicCoating", "Ceramic Coating", [
+                "Large Trucks/Large SUV: $1500+",
+                "Mid Size SUV: $1400+",
+                "Sedans/Small Cars: $1000+"
+            ], [
+                "Full paint and wheel decontamination",
+                "2 stage paint enhancement to remove scratches, swirls, and oxidation in the paint",
+                "system X Max is applied to paint for 10 years of protection",
+                "2 year coating for glass, wheels, and plastic trim"
+            ], "", [
+                "images/pricing/ceramicCoatingCamaro.jpg",
+            ]);
 
-            </h2>
-        </div>
-    </div>
-</div> 
+            // VIP Package
+            initializeSection("vipPackage", "VIP Package", [
+                "Large Trucks/Large SUV: $1650+",
+                "Mid Size SUV: $1550+",
+                "Sedans/Small Cars: $1250+"
+            ], [
+                "Full paint and wheel decontamination",
+                "2 stage paint enhancement to remove scratches, swirls, and oxidation in the paint",
+                "system X Max is applied to paint for 10 years of protection",
+                "2 year coating for glass, wheels, and a plastic trim",
+                "A complete Signature Interior Detail is included"
+            ], "", [
+                "images/pricing/senor.JPG",
+            ]);
 
+            // Maintenance Cleaning
+            initializeSection("maintenanceCleaning", "Maintenance Cleaning", [
+                "Monthly: Large Trucks/Large SUV: $200",
+                "Monthly: Mid Size SUV: $150",
+                "Monthly: Sedans/Small Cars: $140",
+                "Biweekly: Large Trucks/Large SUV: $150",
+                "Biweekly: Mid Size SUV: $125",
+                "Biweekly: Sedans/Small Cars: $100-85"
+            ], [
+                "Wheel and tire cleaning",
+                "hand wash",
+                "tire dressing",
+                "a layer of Si02 sealant (if needed)",
+                "basic vacuum",
+                "panel wipe down",
+                "floor matt cleaning",
+                "inside and out glass cleaning"
+            ], "After getting a full detail from one of the packages ask about getting on the schedule for biweekly or monthly maintenance cleaning to keep your car always looking showroom ready!", [
+                "images/pricing/senor.JPG",
+            ]);
+            
+            // Two Year Ceramic Coating
+            initializeSection("twoYearCeramicCoating", "Two Year Ceramic Coating", [
+                "Large Trucks/Large SUV: $1000",
+                "Mid Size SUV: $750",
+                "Sedans/Small Cars: $650"
+            ], [
+                "Wheels and Tires cleaning",
+                "exterior decontamination wash",
+                "one step paint correction to remove swirls, light scratches, and add gloss",
+                "one year coating, applied to paint, wheels, glass, and trim"
+            ], "", [
+                "images/pricing/senor.JPG",
+            ]);
 
-    <section id="section-right22">
-        <div class="moving2">
-        <img src="image/boat.jpg" alt="">
-    </div>
-    </section>
-    
-    <section id="section-left22"> 
-        <div class="coating">
-            <div class="bodyText"> 
-             <h3>Window Tint</h3>  
-             <h4> $85 per side windows, $100-$130 for rear windsheilds, $50-$65 for windsheild strips       </h4>
-                <h2>Enhance privacy, protect interiors, and stay cool with our premium window tinting. Crafted for style and functionality, our tint offers UV protection, reduces glare, and adds a sleek finish to any vehicle or home. Experience the perfect balance of comfort and aesthetics with our top-quality window tint solution. 
-                </h2>
-            </div>
-          
-            </div>
-        
-    </section>
-  
-</div>
+            // Deep Clean Interior
+            initializeSection("deepCleanInterior", "Deep Clean Interior", [
+                "Large Trucks/Large SUV: $300-$270",
+                "Mid Size SUV: $250",
+                "Sedans/Small Cars: $200"
+            ], [
+                "Dry vacuum",
+                "carpet and upholstery shampoo and steamed",
+                "wet vacuum extraction",
+                "floor matt cleaning",
+                "plastic, rubber, and vinyl panels steamed cleaned and disinfected",
+                "topped with UV protectant",
+                "leather conditioner (if needed)",
+                "air freshener"
+            ], "", [
+                "images/pricing/senor.JPG",
+            ]);
 
-</main>
-
-
-
-
-
-
-
-
-
-<div class="mobile">
-
-    
-    <div class="PlatI1">
-        <div class="bodyText"> 
-         <h3>Platinum Exterior</h3>  
-         <h4> Starting Prices: Large Trucks/Large SUV-$150 Trucks/Mid Size SUV-$125 Sedans/Small Cars-$115</h4>
-            <h2>What's Included: Wheel and tire cleaning, wheel well cleaning, foam wash,hand wash, iron decon (if needed), clay bar (if needed), 3-6 month Ceramic  Sealant for paint and wheels, trim restoration, tire shine, and exterior window cleaning.
-            </h2>
-        </div>
-    </div>
-    <div class="PlatE1">
-        <div class="bodyText"> 
-        <h3>Signature Interior</h3>  
-            <h4> Starting Prices: Large Trucks/ Large SUV-$150 Trucks/Mid Size SUV-$125 Sedans/Small Cars-$115</h4>
-               <h2>What’s Included: Floor matt cleaning and protectant, dry vacuum carpets and seats, leather seat cleaning, plastic, vinyl, and leather panels, leather conditioner, UV plastic protectant, interior window cleaning, and air freshener <br> <br> Add on Shampoo Carpets:
-                   <br>
-                   Small:$80
-                   <br>
-                   Medium:$100
-                   <br>
-                   Large:$120
-               </h2>
-        </div>
-    </div>
-
-    <div class="container reveal">
-
-    <div class="enhance1">
-        <div class="bodyText"> 
-         <h3>Exterior Enhancement</h3>  
-         <h4>  Trucks/Large SUV:$600-$500 Mid Size SUV-$500-$400 Sedans/Small Cars-$300-$200</h4>
-            <h2>What's Included: Wheel and tire cleaning, wheel well cleaning, foam wash, iron decon, clay bar, trim restoration, window cleaning, tire shine, One step paint correction to remove small scratches and swirls and enhance the paints depth. SiO2 sealant to add high gloss, hydrophobic properties, and paint protection for 6-8 months.
-            </h2>
-            </h2>
-        </div>
-    </div>
-
-
-    <div class="paint1">
-        <div class="bodyText"> 
-         <h3>Paint Correction</h3>  
-         <h4> Trucks/Large SUV-$1000-$800 Mid Size SUV/Cars-$800-$600 Sedans/Small Cars-$400       </h4>
-            <h2>What's Included: Wheel and tire cleaning, wheel well cleaning, foam wash, iron decon, clay bar,  trim restoration, tire shine, window cleaning, paint gets buffed to remove swirls and medium/light scratches, paint is polished to add shine and gloss, One year ceramic coating is added to protect the paint
-            </h2>
-        </div>
-    </div>
-</div>
-    <div class="container reveal">
-
-    <div class="coating1">
-        <div class="bodyText"> 
-         <h3>Ceramic Coating</h3>  
-         <h4> Trucks/Large SUV-$1700-$1200 Mid Size SUV-$1200-$1000 Sedans/Small Cars-$1000-$800     </h4>
-            <h2>What's Included: Full paint and wheel decontamination, 2 stage paint enhancement to remove scrathes, swirls, and oxidation in the paint. System X Max is applied to paint for 10 years of protection, 2 year coating for glass, wheels, and plastic trim. 
-            </h2>
-        </div>
-        <div class="buy-button">
-            <form action="ceramic.html" method="get">
-            <button type = "submit">Learn More</button>
-        </form>
-        </div>
-    </div>
-
-
-
-    <div class="vip1">
-        <div class="bodyText"> 
-         <h3>VIP Package</h3>  
-         <h4> Trucks/Large SUV-$2000-$1500 Mid Size SUV-$1500-$1200 Sedans/Small cars-$1200-$1000       </h4>
-            <h2> Full paint and wheel decontamination, 2 stage paint enhancement to remove scrathes, swirls, and oxidation in the paint. System X Max is applied to paint for 10 years of protection, 2 year coating for glass, wheels, and plastic trim and a complete Signature Interior detail is included
-            </h2>
-        </div>
-    </div>
-    <div class="maintC1">
-        <div class="bodyText"> 
-         <h3>Maintenance Cleaning</h3>  
-         <h4> Monthly-Trucks/Large SUV-$180 Mid Size SUV-$150 Sedans/Small Cars-$140  Biweekly- Trucks/Large SUV-$100 Small SUV and Cars-$75             </h4>
-            <h2>After getting a full detail from one of the packages ask about getting on the schedule for biweekly or monthly maintenance cleaning to keep your car always looking showroom ready! This includes wheel and tire cleaning, hand wash, tire dressing, and a layer of Si02 sealant if needed. Interior gets a basic vacuum, panel wipe down, floor matt cleaning, inside and out glass cleaning
-            </h2>
-        </div>
-    </div>
-
-    <div class="vip1">
-        <div class="bodyText"> 
-            <h3>Two Year Ceramic Coating</h3>  
-            <h4> Trucks/Large SUV:$1000 Mid Size SUV-$750 Sedans/Small Cars:$650       </h4>
-               <h2>What’s Included:Wheels and Tires cleaning, exterior decontamination wash, one step paint correction, One year coating, applied to paint, wheels, glass, and trim.
-               </h2>
-        </div>
-    </div>
-
-
-    <div class="maintC1">
-        <div class="bodyText"> 
-         <h3>Deep Clean Interior</h3>  
-         <h4> Trucks/Large SUV- $270 Mid Size SUV-$250 and cars:$200        </h4>
-            <h2>What’s Included:Dry vacuum, carpet and upholstery shampoo and steamed, wet vacuum extraction, floor matt cleaning, plastic, rubber,and vinyl panels steamed cleaned and disinfected, topped with UV protectant, leather conditioner (if needed), and air freshener. 
- 
-
-            </h2>
-        </div>
-    </div>
-    <div class="coating1">
-        <div class="bodyText"> 
-         <h3>Window Tint</h3>  
-         <h4> $85 per side windows, $100-$130 for rear windsheilds, $50-$65 for windsheild strips        </h4>
-            <h2> Enhance privacy, protect interiors, and stay cool with our premium window tinting. Crafted for style and functionality, our tint offers UV protection, reduces glare, and adds a sleek finish to any vehicle or home. Experience the perfect balance of comfort and aesthetics with our top-quality window tint solution.
-            </h2>
-        </div>
-      
-        </div>
-   </div>
-
-</div>   
-<script type="text/javascript">
-    window.addEventListener('scroll', reveal);
-
-    function reveal(){
-      var reveals = document.querySelectorAll('.reveal');
-
-      for(var i = 0; i < reveals.length; i++){
-
-        var windowheight = window.innerHeight;
-        var revealtop = reveals[i].getBoundingClientRect().top;
-        var revealpoint = 150;
-
-        if(revealtop < windowheight - revealpoint){
-          reveals[i].classList.add('active');
-        }
-        else{
-          reveals[i].classList.remove('active');
-        }
-      }
-    }
-    </script>
+            // Window Tint
+            initializeSection("windowTint", "Window Tint", [
+                "$85 per side windows",
+                "$100-$130 for rear windshields",
+                "$50-$65 for windshield strips"
+            ], [
+                "Enhance privacy",
+                "protect interiors",
+                "uv protection",
+                "glare reduction",
+                "sleek finish",
+            ], "", [
+                "images/pricing/senor.JPG",
+            ]);
+        </script>
+        <!-- Adding in default header -->
+        <script src="js/header.js"></script>
+        <!-- Adding in default footer -->
+        <script src="js/footer.js"></script>
+    </body>
 </html>

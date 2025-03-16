@@ -1,94 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <link rel="stylesheet" href="styleReset.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="more.css">
-</head>
-<header>
-     
-    <div class="toggle"></div>
-    <div class="navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="aboutUs.html">About Us</a></li>
-        <li><a href="reviews.html">Reviews</a></li>
-        <li><a href="contactUs.html">Contact Us</a></li>
-        
-      </ul>
-  
-    </div>
-    <script src="script.js"></script>
-  </header>
-<div class="topper">
-    <img src="image/carcapture.PNG" alt="">
- </div>
-<nav>
-    <a href="index.html">Home</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="pricing.html">Pricing</a>
-    <a href="aboutUs.html">About us</a>
-    <a href="contactUs.html">Contact Us</a>
-</nav>
-<section class = "product-list">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Boats</title>
+        <link rel="stylesheet" href="styleReset.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/templates/header.css">
+        <link rel="stylesheet" href="css/templates/footer.css">
+        <link rel="stylesheet" href="css/galleryStyle.css">
+    </head>
+    <body>
+        <!-- Adding in default footer -->
+        <script src="js/header.js"></script>
+        <h1 class="gallery-title">Boats</h1>
     
+        <section class="gallery-section">
+            <div class="gallery-container" id="boat-gallery"></div>
+        </section>    
 
-    <h2> Boats </h2>
-    <div class="product-container2">
-        <div class="card"> 
-            
-                <div class="image">
-                    <img src= "image/boats/16.jpg" alt="">
-                </div>  
-         </div>
-    
+        <!-- Adding in gallery style -->
+        <script src="js/galleryLib.js"></script>
+        <script src="js/boats.js"></script>
 
-        <div class="card"> 
-            
-          <div class="image">
-              <img src= "image/boats/26.jpg" alt="">
-          </div>  
-        </div> 
-          <div class="card"> 
-            
-            <div class="image">
-                <img src= "image/boats/36.jpg" alt="">
-            </div>  
-          </div> 
-            <div class="card"> 
-            
-              <div class="image">
-                  <img src= "image/boats/167.jpg" alt="">
-              </div>  
-            </div> 
-              <div class="card"> 
-            
-                <div class="image">
-                    <img src= "image/boats/267.jpg" alt="">
-                </div>  
-              </div> 
-                <div class="card"> 
-            
-                  <div class="image">
-                      <img src= "image/boats/367.jpg" alt="">
-                  </div>  
-   
-                </div> 
-      
-
-              </div> 
-
-               
-    
-
-</section>
-
+        <!-- Adding in default footer -->
+        <script src="js/footer.js"></script>
+    </body>
 </html>

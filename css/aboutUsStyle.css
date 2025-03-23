@@ -108,7 +108,6 @@ padding-top: 100px;
   display: block;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .about-container, .social-reviews-container {
       flex-direction: column;

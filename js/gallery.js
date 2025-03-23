@@ -1,20 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
     const imageData = {
-        sedans: [
-            "images/blurryLogo.png", "images/blurryLogo.png", "images/blurryLogo.png", "images/blurryLogo.png",
-            "images/blurryLogo.png", "images/blurryLogo.png", 
+        ceramicCoatings: [
+            "images/CeramicCoating/ceramicCoatingJ1.jpg", "images/CeramicCoating/ceramicCoatingJ2.jpg",
+            "images/CeramicCoating/ceramicCoatingJ3.jpg", "images/CeramicCoating/ceramicCoatingJ4.jpg",
         ],
-        trucks: [
-            "images/goodCarPhoto.jpg", "images/goodCarPhoto.jpg", "images/goodCarPhoto.jpg", "images/goodCarPhoto.jpg",
+        windowTints: [
+            "images/windowTint/windowTint1.png", "images/windowTint/windowTint2.png",
+            "images/windowTint/windowTint3.png", "images/windowTint/windowTint4.png",
         ],
-        boats: [
-            "images/pricing/boat1.jpg", "images/pricing/boat2.jpg"
+        detailings: [
+            "images/detailing/detailing7.png", "images/detailing/detailing2.png",
+            "images/detailing/detailing3.png", "images/detailing/detailing4.png",
         ]
     };
 
-    populateGallery("car-gallery", imageData.sedans);
-    populateGallery("truck-gallery", imageData.trucks);
-    populateGallery("boat-gallery", imageData.boats);
+    populateGallery("ceramic-gallery", imageData.ceramicCoatings);
+    populateGallery("window-gallery", imageData.windowTints);
+    populateGallery("detailing-gallery", imageData.detailings);
 });
 
 const script = document.createElement("script");

@@ -59,20 +59,32 @@
 }
 
 .reusable-slideshow-container img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 700px;
     max-height: 100%;
     object-fit: cover;
     display: block;
     position: absolute;
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    height: auto;
 }
 
 .reusable-slideshow-container img.active {
     opacity: 1;
 }
 
-/* Responsive Design */
+@media (max-width: 1024px) {
+    .reusable-slideshow-container img {
+        height: 300px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .reusable-slideshow-container img {
+      height: 200px;
+  }
+  }
 @media (max-width: 768px) {
     .reusable-content-section {
         flex-direction: column;

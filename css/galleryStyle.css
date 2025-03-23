@@ -9,7 +9,6 @@ html {
   font-family: 'Oswald', sans-serif;
 }
 
-/* BODY */
 body{
 background-color: white;
 background-size: cover;
@@ -58,23 +57,22 @@ padding-top: 100px;
   grid-template-columns:repeat(4, 1fr);
   max-width: 90%;
   margin: 0 auto;
+  
 }
 
-/* Gallery Images */
 .gallery-container img {
   width: 100%;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 8px;
   transition: transform 0.3s ease-in-out;
-  max-height: 300px;
+  height: 250px;
 }
 
 .gallery-container img:hover {
   transform: scale(1.05);
 }
 
-/* View More Button Styles */
 .view-more-button {
   display: inline-block;
   margin-top: 20px;
@@ -92,10 +90,12 @@ padding-top: 100px;
   background-color: #100f0f;
 }
 
-/* Responsive Breakpoints */
 @media (max-width: 1024px) {
   .gallery-container {
       grid-template-columns: repeat(4, 1fr);
+  }
+  .gallery-container img {
+      height: 150px;
   }
 }
 
@@ -103,4 +103,7 @@ padding-top: 100px;
   .gallery-container {
       grid-template-columns: repeat(2, 1fr);
   }
+  .gallery-container img {
+    height: 100px;
+}
 }

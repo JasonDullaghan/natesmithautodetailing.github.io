@@ -1,0 +1,211 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* BODY */
+body{
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 20px;
+}
+
+.bodyText{
+    color: rgb(61, 61, 61);
+    font-size: 22px;
+    max-width: 40%;
+    line-height: 27pt;
+    overflow: hidden;
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+.slideshow-container {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  margin: 0;
+  aspect-ratio: 16 / 9; 
+  overflow: hidden;
+  max-height: 700px;
+  
+}
+.slide {
+  display: none;
+  position: relative;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.text-overlay p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.slideshow-button {
+  background-color: #ff4500;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.overlay-button:hover {
+  background-color: #100f0f;
+}
+
+.welcome-message {
+  color: black;
+  padding: 20px;
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  border-radius: 0;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.welcome-message h3 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.welcome-message h2 {
+  font-size: 1.5rem; 
+  line-height: 1.6; 
+}
+
+.store-page-button {
+  background-color: #ff4500;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.store-page-button:hover {
+  background-color: #100f0f;
+}
+
+.contact-container {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  gap: 20px; 
+}
+
+.contact-info {
+  flex: 1;
+  padding: 40px;
+  text-align: center; 
+  color: black; 
+}
+
+.contact-info h1 {
+  font-size: 48px; 
+  margin-bottom: 20px; 
+  font-weight: bold;
+}
+
+.contact-info h1::after {
+  content: "";
+  display: block;
+  width: 400px; 
+  height: 1px; 
+  background-color: #000;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-info p {
+  font-size: 24px; 
+  margin: 20px 0;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #0b0b0b;
+}
+
+.car-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.car-image img {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 0;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+  }
+
+  .contact-info, .car-image {
+      flex: none;
+      width: 100%;
+      text-align: center;
+  }
+
+  .contact-info h1::after {
+    width: 60%; 
+  }
+
+  .car-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .car-image img {
+      max-width: 100%;
+      height: auto;
+  }
+}

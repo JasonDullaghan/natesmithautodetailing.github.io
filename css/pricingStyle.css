@@ -1,0 +1,10 @@
+body {
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+html {
+  font-family: 'Oswald', sans-serif;
+}

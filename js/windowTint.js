@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const windowTintImages = [
-        "./images/windowTint/windowTint1.png", "./images/windowTint/windowTint2.png",
-        "./images/windowTint/windowTint3.png", "./images/windowTint/windowTint4.png",
-        "./images/windowTint/windowTint5.png", "./images/windowTint/windowTint6.png",
-        "./images/windowTint/windowTint7.png", "./images/windowTint/windowTint8.png"
+        "./images/windowTint/windowTint1.PNG", "./images/windowTint/windowTint2.PNG",
+        "./images/windowTint/windowTint3.PNG", "./images/windowTint/windowTint4.PNG",
+        "./images/windowTint/windowTint5.PNG", "./images/windowTint/windowTint6.PNG",
+        "./images/windowTint/windowTint7.PNG", "./images/windowTint/windowTint8.PNG"
     ];
     function populateGallery(sectionId, images) {
         const gallery = document.getElementById(sectionId);

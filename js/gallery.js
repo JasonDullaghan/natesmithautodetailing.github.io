@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     const imageData = {
         ceramicCoatings: [
-            "./images/CeramicCoating/ceramicCoatingJ1.jpg", "./images/CeramicCoating/ceramicCoatingJ2.jpg",
-            "./images/CeramicCoating/ceramicCoatingJ3.jpg", "./images/CeramicCoating/ceramicCoatingJ4.jpg",
+            "./images/ceramicCoating/ceramicCoatingJ1.jpg", "./images/ceramicCoating/ceramicCoatingJ2.jpg",
+            "./images/ceramicCoating/ceramicCoatingJ3.jpg", "./images/ceramicCoating/ceramicCoatingJ3.jpg",
         ],
         windowTints: [
             "./images/windowTint/windowTint1.PNG", "./images/windowTint/windowTint2.PNG",

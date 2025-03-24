@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
     const ceramicCoatingImgs = [
-        "images/CeramicCoating/ceramicCoatingJ1.jpg", "images/CeramicCoating/ceramicCoatingJ2.jpg",
-        "images/CeramicCoating/ceramicCoatingJ3.jpg", "images/CeramicCoating/ceramicCoatingJ4.jpg",
-        "images/CeramicCoating/ceramicCoatingJ5.jpg", "images/CeramicCoating/ceramicCoatingJ6.jpg",
-        "images/CeramicCoating/ceramicCoatingJ7.jpg", "images/CeramicCoating/ceramicCoating1.png",
-        "images/CeramicCoating/ceramicCoating2.png", "images/CeramicCoating/ceramicCoating3.png",
-        "images/CeramicCoating/ceramicCoating4.png", "images/CeramicCoating/ceramicCoating5.png",
-        "images/CeramicCoating/ceramicCoating6.png", "images/CeramicCoating/ceramicCoating7.png",
-        "images/CeramicCoating/ceramicCoating8.png", "images/pricing/platinumExteriorCorvette.PNG"
+        "./images/CeramicCoating/ceramicCoatingJ1.jpg", "./images/CeramicCoating/ceramicCoatingJ2.jpg",
+        "./images/CeramicCoating/ceramicCoatingJ3.jpg", "./images/CeramicCoating/ceramicCoatingJ4.jpg",
+        "./images/CeramicCoating/ceramicCoatingJ5.jpg", "./images/CeramicCoating/ceramicCoatingJ6.jpg",
+        "./images/CeramicCoating/ceramicCoatingJ7.jpg", "./images/CeramicCoating/ceramicCoating1.PNG",
+        "./images/CeramicCoating/ceramicCoating2.PNG", "./images/CeramicCoating/ceramicCoating3.PNG",
+        "./images/CeramicCoating/ceramicCoating4.PNG", "./images/CeramicCoating/ceramicCoating5.PNG",
+        "./images/CeramicCoating/ceramicCoating6.PNG", "./images/CeramicCoating/ceramicCoating7.PNG",
+        "./images/CeramicCoating/ceramicCoating8.PNG", "./images/pricing/platinumExteriorCorvette.PNG"
     ];
     function populateGallery(sectionId, images) {
         const gallery = document.getElementById(sectionId);

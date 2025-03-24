@@ -1,16 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
     const imageData = {
         ceramicCoatings: [
-            "images/CeramicCoating/ceramicCoatingJ1.jpg", "images/CeramicCoating/ceramicCoatingJ2.jpg",
-            "images/CeramicCoating/ceramicCoatingJ3.jpg", "images/CeramicCoating/ceramicCoatingJ4.jpg",
+            "./images/CeramicCoating/ceramicCoatingJ1.jpg", "./images/CeramicCoating/ceramicCoatingJ2.jpg",
+            "./images/CeramicCoating/ceramicCoatingJ3.jpg", "./images/CeramicCoating/ceramicCoatingJ4.jpg",
         ],
         windowTints: [
-            "images/windowTint/windowTint1.png", "images/windowTint/windowTint2.png",
-            "images/windowTint/windowTint3.png", "images/windowTint/windowTint4.png",
+            "./images/windowTint/windowTint1.PNG", "./images/windowTint/windowTint2.PNG",
+            "./images/windowTint/windowTint3.PNG", "./images/windowTint/windowTint4.PNG",
         ],
         detailings: [
-            "images/detailing/detailing7.png", "images/detailing/detailing2.png",
-            "images/detailing/detailing3.png", "images/detailing/detailing4.png",
+            "./images/detailing/detailing7.PNG", "./images/detailing/detailing2.PNG",
+            "./images/detailing/detailing3.PNG", "./images/detailing/detailing4.PNG",
         ]
     };
 

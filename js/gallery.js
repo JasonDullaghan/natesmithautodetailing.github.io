@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ],
         windowTints: [
             "./images/windowTint/windowTint1.PNG", "./images/windowTint/windowTint2.PNG",
-            "./images/windowTint/windowTint3.PNG", "./images/windowTint/windowTint4.PNG",
+            "./images/windowTint/windowTint3.PNG", "./images/windowTint/windowTint4.png",
         ],
         detailings: [
             "./images/detailing/detailing7.PNG", "./images/detailing/detailing2.PNG",

@@ -5,12 +5,12 @@ document.addEventListener("DOMContentLoaded", function () {
             "./images/ceramicCoating/ceramicCoatingJ3.jpg", "./images/ceramicCoating/ceramicCoatingJ3.jpg",
         ],
         windowTints: [
-            "./images/windowTint/windowTint1.PNG", "./images/windowTint/windowTint2.PNG",
-            "./images/windowTint/windowTint3.PNG", "./images/windowTint/windowTint4.png",
+            "./images/windowTint/windowTint1.jpg", "./images/windowTint/windowTint2.jpg",
+            "./images/windowTint/windowTint3.PNG", "./images/windowTint/windowTint4.jpg",
         ],
         detailings: [
-            "./images/detailing/detailing7.PNG", "./images/detailing/detailing2.PNG",
-            "./images/detailing/detailing3.PNG", "./images/detailing/detailing4.PNG",
+            "./images/detailing/detailing7.PNG", "./images/detailing/detailing2.jpg",
+            "./images/detailing/detailing3.jpg", "./images/detailing/detailing4.PNG",
         ]
     };
 

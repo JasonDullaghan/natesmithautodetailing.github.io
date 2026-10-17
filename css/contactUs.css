@@ -9,7 +9,7 @@ html {
   font-family: 'Oswald', sans-serif;
 }
 
-h5 {
+h1, h5 {
   padding-top: 5%;
   color: rgb(0, 0, 0);
   font-size: 2rem;
@@ -99,7 +99,7 @@ h3 {
         display:none;
     }
 }
-h5 {
+h1, h5 {
     text-align: center;
     padding: 0;
     padding-top: 5%;

@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
         "./images/ceramicCoating/ceramicCoatingJ3.jpg", "./images/ceramicCoating/ceramicCoatingJ4.jpg",
         "./images/ceramicCoating/ceramicCoatingJ5.jpg", "./images/ceramicCoating/ceramicCoatingJ6.jpg",
         "./images/ceramicCoating/ceramicCoatingJ7.jpg", "./images/ceramicCoating/ceramicCoating1.PNG",
-        "./images/ceramicCoating/ceramicCoating2.PNG", "./images/ceramicCoating/ceramicCoating3.PNG",
-        "./images/ceramicCoating/ceramicCoating4.PNG", "./images/ceramicCoating/ceramicCoating5.PNG",
-        "./images/ceramicCoating/ceramicCoating6.PNG", "./images/ceramicCoating/ceramicCoating7.PNG",
+        "./images/ceramicCoating/ceramicCoating2.jpg", "./images/ceramicCoating/ceramicCoating3.PNG",
+        "./images/ceramicCoating/ceramicCoating4.jpg", "./images/ceramicCoating/ceramicCoating5.jpg",
+        "./images/ceramicCoating/ceramicCoating6.jpg", "./images/ceramicCoating/ceramicCoating7.jpg",
         "./images/ceramicCoating/ceramicCoating8.PNG", "./images/pricing/platinumExteriorCorvette.PNG"
     ];
     function populateGallery(sectionId, images) {

@@ -98,13 +98,13 @@ body{
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
-.welcome-message h3 {
+.welcome-message h1 {
   font-size: 2.5rem;
   margin-top: 20px;
   margin-bottom: 50px;
 }
 
-.welcome-message h2 {
+.welcome-message p {
   font-size: 1.5rem; 
   line-height: 1.6; 
 }
@@ -142,13 +142,13 @@ body{
   color: black; 
 }
 
-.contact-info h1 {
+.contact-info h2 {
   font-size: 48px; 
   margin-bottom: 20px; 
   font-weight: bold;
 }
 
-.contact-info h1::after {
+.contact-info h2::after {
   content: "";
   display: block;
   width: 400px; 
@@ -195,7 +195,7 @@ body{
       text-align: center;
   }
 
-  .contact-info h1::after {
+  .contact-info h2::after {
     width: 60%; 
   }
 
